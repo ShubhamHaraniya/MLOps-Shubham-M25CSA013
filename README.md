@@ -1,4 +1,4 @@
-# MLOps Assignment 1
+# ML-DL-Ops Assignment 1
 
 This README contains the requested tables and results for the assignment.
 
