@@ -1,7 +1,5 @@
 # ML-DL-Ops Assignment 1
 
-This README contains the requested tables and results for the assignment.
-
 ## Q1 (A): Hyperparameter Tuning Results
 
 | Dataset | BS | Opt | LR | PinMem | Epochs | Model | Test Acc | Best Val | Time (s) |
