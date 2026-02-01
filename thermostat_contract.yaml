@@ -1,0 +1,47 @@
+dataContractSpecification: 0.9.3
+id: urn:datacontract:iot:thermostat-readings
+version: 1.0.0
+
+info:
+  title: "Thermostat Sensor Readings"
+  description: "Minute-level telemetry from smart home thermostats."
+  owner: "IoT Firmware Team"
+  contact:
+    name: "IoT Ops"
+    email: "iot-ops@smart-home.com"
+  classification: internal
+
+schema:
+  type: object
+  properties:
+    device_id:
+      type: string
+      description: "Unique serial number of the thermostat."
+      pii: false
+
+    temperature_celsius:
+      type: number
+      description: "Ambient temperature reading in Celsius."
+      pii: false
+
+    battery_level:
+      type: number
+      description: "Battery charge percentage (0.0 to 1.0)."
+      pii: false
+
+  required: [device_id, temperature_celsius, battery_level]
+
+quality:
+  - name: temperature_sane_range
+    type: validity
+    expression: "temperature_celsius >= -30 AND temperature_celsius <= 60"
+    threshold: "100%"
+    enforcement: hard
+    description: "Reject physics-defying temperatures."
+
+  - name: battery_level_range
+    type: validity
+    expression: "battery_level >= 0.0 AND battery_level <= 1.0"
+    threshold: "100%"
+    enforcement: hard
+    description: "Battery must be between 0.0 (dead) and 1.0 (full)."

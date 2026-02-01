@@ -1,0 +1,42 @@
+dataContractSpecification: 0.9.3
+id: urn:datacontract:fintech:transaction-log
+version: 1.0.0
+
+info:
+  title: "Real-Time Transaction Log"
+  description: "Financial transactions used for real-time fraud detection."
+  owner: "Core Banking Team"
+  contact:
+    name: "Security Ops"
+    email: "sec-ops@bank.com"
+  classification: restricted
+
+schema:
+  type: object
+  properties:
+    source_account_id:
+      type: string
+      pattern: "^[A-Z0-9]{10}$"
+      description: "Source Account ID. Must be exactly 10 uppercase alphanumeric chars."
+      pii: true
+
+    destination_account_id:
+      type: string
+      description: "Destination Account ID."
+      pii: true
+
+    transaction_timestamp:
+      type: string
+      format: date-time
+      description: "Time of transaction."
+      pii: false
+
+  required: [source_account_id, destination_account_id, transaction_timestamp]
+
+quality:
+  - name: source_account_format
+    type: validity
+    expression: "REGEXP_LIKE(source_account_id, '^[A-Z0-9]{10}$')"
+    threshold: "100%"
+    enforcement: hard
+    description: "CRITICAL: HARD CIRCUIT BREAKER. Account ID must be exactly 10 characters (A-Z, 0-9). Violations must block pipeline."

@@ -1,0 +1,46 @@
+dataContractSpecification: 0.9.3
+id: urn:datacontract:ecommerce:orders-stream
+version: 1.0.0
+
+info:
+  title: "Real-Time Order Stream"
+  description: "Live feed of order totals and statuses for marketing dashboards."
+  owner: "Checkout Systems Team"
+  contact:
+    name: "Checkout Lead"
+    email: "checkout@shop.com"
+  classification: internal
+
+schema:
+  type: object
+  properties:
+    order_total_usd:
+      type: number
+      description: "Total order value in USD."
+      minimum: 0
+      pii: false
+
+    order_status:
+      type: string
+      enum: [PAID, SHIPPED, CANCELLED]
+      description: |
+        Logical status derived from physical status_code.
+        Mappings: 2 -> PAID, 5 -> SHIPPED, 9 -> CANCELLED.
+      pii: false
+
+  required: [order_total_usd, order_status]
+
+quality:
+  - name: total_non_negative
+    type: validity
+    expression: "order_total_usd >= 0"
+    threshold: "100%"
+    enforcement: hard
+    description: "Order total must be greater than or equal to $0."
+
+  - name: valid_status_enum
+    type: validity
+    expression: "order_status IN ('PAID', 'SHIPPED', 'CANCELLED')"
+    threshold: "100%"
+    enforcement: hard
+    description: "Reject records with unmapped status codes (anything other than 2, 5, 9)."
