@@ -75,7 +75,7 @@ All metrics show **0.0000 difference** between local and hub models — confirmi
 ├── Dockerfile                # Dev Docker image (GPU)
 ├── Dockerfile.eval           # Production eval Docker image
 ├── requirements.txt          # Dependencies
-├── report.tex                # LaTeX report
+├── M25CSA013_Assignment3              # Report
 ├── results/
 │   ├── eval_results.json     # Local evaluation results
 │   ├── hub_eval_results.json # Hub evaluation results
@@ -222,3 +222,4 @@ The pipeline auto-generates 7 evaluation plots in `results/plots/`:
 - [HuggingFace Transformers](https://huggingface.co/docs/transformers/)
 - [DistilBERT Paper (Sanh et al., 2019)](https://arxiv.org/abs/1910.01108)
 - Original notebook by Maria Antoniak, Melanie Walsh, and the [AI for Humanists](https://aiforhumanists.com/) team
+
