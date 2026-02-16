@@ -24,9 +24,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy source code
 COPY . .
 
-# Environment variables (to be set at runtime)
-ENV HF_TOKEN=""
+# Default repo (token must be passed at runtime via -e HF_TOKEN=...)
 ENV HF_REPO="spidey1807/mlops_ass3"
 
 # Run evaluation from HuggingFace Hub on startup
-CMD python evaluate_from_hub.py --repo_name ${HF_REPO} --token ${HF_TOKEN}
+CMD ["sh", "-c", "python evaluate_from_hub.py --repo_name ${HF_REPO} --token ${HF_TOKEN}"]
