@@ -139,40 +139,55 @@
             opacity: 0.9;
         }
 
+        /* Metric badges for Ass4 */
+        .metrics-row {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            margin: 1rem 0 1.5rem;
+        }
+
+        .metric-badge {
+            background: rgba(56, 189, 248, 0.08);
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            border-radius: 0.75rem;
+            padding: 0.5rem 0.9rem;
+            text-align: center;
+        }
+
+        .metric-badge .val {
+            display: block;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            line-height: 1.2;
+        }
+
+        .metric-badge .lbl {
+            display: block;
+            font-size: 0.72rem;
+            color: var(--text-secondary);
+            margin-top: 0.1rem;
+        }
+
+        .metric-badge.green .val { color: #4ade80; }
+        .metric-badge.green { border-color: rgba(74, 222, 128, 0.25); background: rgba(74, 222, 128, 0.06); }
+
         /* Animations */
         @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(-20px); }
+            to   { opacity: 1; transform: translateY(0); }
         }
 
         @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(20px); }
+            to   { opacity: 1; transform: translateY(0); }
         }
 
         @media (max-width: 600px) {
-            h1 {
-                font-size: 2.5rem;
-            }
-
-            .profile-info {
-                flex-direction: column;
-                gap: 0.5rem;
-            }
+            h1 { font-size: 2.5rem; }
+            .profile-info { flex-direction: column; gap: 0.5rem; }
+            .metrics-row { gap: 0.5rem; }
         }
     </style>
 </head>
@@ -206,19 +221,14 @@
                         </p>
                         <br>
                         <ul style="padding-left: 1.2rem; list-style-type: disc;">
-                            <li><strong>Best Model:</strong> ResNet-18 (Adam, LR 0.001) achieved ~99.36% accuracy on
-                                MNIST.</li>
-                            <li><strong>Efficiency:</strong> ResNet-18 matched ResNet-50 performance but with
-                                significantly faster training times.</li>
-                            <li><strong>Compute:</strong> GPU acceleration provided massive speedups over CPU, critical
-                                for deep learning workflows.</li>
-                            <li><strong>FLOPs:</strong> ResNet-50 (~0.67 GFLOPs) required >2x compute significantly per
-                                inference compared to ResNet-18 (~0.30 GFLOPs).</li>
+                            <li><strong>Best Model:</strong> ResNet-18 (Adam, LR 0.001) achieved ~99.36% accuracy on MNIST.</li>
+                            <li><strong>Efficiency:</strong> ResNet-18 matched ResNet-50 performance but with significantly faster training times.</li>
+                            <li><strong>Compute:</strong> GPU acceleration provided massive speedups over CPU, critical for deep learning workflows.</li>
+                            <li><strong>FLOPs:</strong> ResNet-50 (~0.67 GFLOPs) required >2x compute significantly per inference compared to ResNet-18 (~0.30 GFLOPs).</li>
                         </ul>
                     </div>
                     <a href="https://github.com/ShubhamHaraniya/MLOps-Shubham-M25CSA013/blob/Assignment-1/M25CSA013_Shubham_Haraniya_Ass1.pdf"
-                        target="_blank" class="btn">View Report
-                        PDF</a>
+                        target="_blank" class="btn">View Report PDF</a>
                 </article>
 
                 <!-- Assignment 2 Card -->
@@ -231,14 +241,10 @@
                         </p>
                         <br>
                         <ul style="padding-left: 1.2rem; list-style-type: disc;">
-                            <li><strong>Ride-Share:</strong> Logical renaming, non-negative fares, PII tagging for
-                                passenger IDs, and SLA definitions.</li>
-                            <li><strong>E-commerce:</strong> Enum mapping for order status (Paid/Shipped/Cancelled) and
-                                invalid code rejection.</li>
-                            <li><strong>IoT Thermostats:</strong> Physics-based range validation (-30°C to 60°C) and
-                                battery level checks (0.0-1.0).</li>
-                            <li><strong>FinTech:</strong> Critical hard circuit breakers with regex pattern matching for
-                                10-char alphanumeric account IDs.</li>
+                            <li><strong>Ride-Share:</strong> Logical renaming, non-negative fares, PII tagging for passenger IDs, and SLA definitions.</li>
+                            <li><strong>E-commerce:</strong> Enum mapping for order status (Paid/Shipped/Cancelled) and invalid code rejection.</li>
+                            <li><strong>IoT Thermostats:</strong> Physics-based range validation (-30°C to 60°C) and battery level checks (0.0–1.0).</li>
+                            <li><strong>FinTech:</strong> Critical hard circuit breakers with regex pattern matching for 10-char alphanumeric account IDs.</li>
                         </ul>
                     </div>
                     <a href="https://github.com/ShubhamHaraniya/MLOps-Shubham-M25CSA013/tree/Assignment-2"
@@ -256,25 +262,65 @@
                         </p>
                         <br>
                         <ul style="padding-left: 1.2rem; list-style-type: disc;">
-                            <li><strong>Model:</strong> <code
-                                    style="color: var(--accent-color);">distilbert-base-uncased</code> (66M params) —
-                                61.88% accuracy on 8 genres.</li>
-                            <li><strong>Best Genres:</strong> Comics &amp; Graphic (F1: 0.81), Poetry (F1: 0.77) due to
-                                distinctive vocabulary.</li>
-                            <li><strong>Pipeline:</strong> Train → Evaluate → Push to HuggingFace Hub → Re-evaluate from
-                                Hub (0.0000 diff).</li>
-                            <li><strong>Deployment:</strong> GPU-enabled Docker images for both development and
-                                production evaluation.</li>
+                            <li><strong>Model:</strong> <code style="color: var(--accent-color);">distilbert-base-uncased</code> (66M params) — 61.88% accuracy on 8 genres.</li>
+                            <li><strong>Best Genres:</strong> Comics &amp; Graphic (F1: 0.81), Poetry (F1: 0.77) due to distinctive vocabulary.</li>
+                            <li><strong>Pipeline:</strong> Train → Evaluate → Push to HuggingFace Hub → Re-evaluate from Hub (0.0000 diff).</li>
+                            <li><strong>Deployment:</strong> GPU-enabled Docker images for both development and production evaluation.</li>
                         </ul>
                     </div>
                     <div style="display: flex; gap: 1rem;">
                         <a href="https://github.com/ShubhamHaraniya/MLOps-Shubham-M25CSA013/tree/Assignment-3"
                             target="_blank" class="btn" style="flex: 1;">View Github</a>
                         <a href="https://huggingface.co/spidey1807/mlops_ass3" target="_blank" class="btn"
-                            style="flex: 1; background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);">🤗
-                            HuggingFace</a>
+                            style="flex: 1; background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);">🤗 HuggingFace</a>
                     </div>
                 </article>
+
+                <!-- Assignment 4 Card -->
+                <article class="card" style="animation-delay: 0.3s;">
+                    <span class="tag">Assignment 4</span>
+                    <h2>Optimizing Transformer Translation</h2>
+                    <div class="analysis-text">
+                        <p>
+                            Built a custom Encoder-Decoder Transformer for English→Hindi translation and optimised it
+                            using Ray Tune (Optuna + ASHA) over 7 hyperparameters — beating the baseline BLEU in 70% fewer epochs.
+                        </p>
+
+                        <!-- Key metric badges -->
+                        <div class="metrics-row">
+                            <div class="metric-badge green">
+                                <span class="val">52.37%</span>
+                                <span class="lbl">Tuned BLEU</span>
+                            </div>
+                            <div class="metric-badge">
+                                <span class="val">44.62%</span>
+                                <span class="lbl">Baseline BLEU</span>
+                            </div>
+                            <div class="metric-badge green">
+                                <span class="val">5.4×</span>
+                                <span class="lbl">Speedup</span>
+                            </div>
+                            <div class="metric-badge green">
+                                <span class="val">30</span>
+                                <span class="lbl">Epochs (vs 100)</span>
+                            </div>
+                            <div class="metric-badge">
+                                <span class="val">3.7 min</span>
+                                <span class="lbl">Train Time</span>
+                            </div>
+                        </div>
+
+                        <ul style="padding-left: 1.2rem; list-style-type: disc;">
+                            <li><strong>Architecture:</strong> Custom Transformer (d<sub>model</sub>=512, 46.8M params baseline → 23.7M tuned) trained on 3,956 English–Hindi pairs.</li>
+                            <li><strong>Search:</strong> Ray Tune + Optuna searched 7 hyperparameters (lr, batch size, heads, d_ff, dropout, layers, warmup) over 10 trials with ASHA early stopping.</li>
+                            <li><strong>Best Config:</strong> lr=3.20e-4, batch=32, heads=4, d_ff=1024, dropout=0.254, layers=4 — leaner and better regularised than baseline.</li>
+                            <li><strong>Result:</strong> Tuned model beat baseline BLEU (52.37% vs 44.62%) using only 30 epochs in 3.7 min vs 19.7 min — a 5.4× speedup and 70% epoch reduction.</li>
+                        </ul>
+                    </div>
+                    <a href="https://github.com/ShubhamHaraniya/MLOps-Shubham-M25CSA013/tree/Assignment-4"
+                        target="_blank" class="btn">View Github</a>
+                </article>
+
             </div>
         </section>
     </div>
