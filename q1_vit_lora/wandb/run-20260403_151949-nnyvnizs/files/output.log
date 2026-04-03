@@ -1,0 +1,50 @@
+Trainable: 112,228 / 21,816,392 (0.51%)
+
+Epoch 1/10
+                                                          
+  train_loss=1.9428  train_acc=0.5919
+  val_loss=0.6768    val_acc=0.8280
+  -> saved best model (val_acc=0.8280)
+
+Epoch 2/10
+  train_loss=0.5129  train_acc=0.8558
+  val_loss=0.4843    val_acc=0.8544
+  -> saved best model (val_acc=0.8544)
+
+Epoch 3/10
+  train_loss=0.4071  train_acc=0.8789
+  val_loss=0.4323    val_acc=0.8712
+  -> saved best model (val_acc=0.8712)
+
+Epoch 4/10
+  train_loss=0.3583  train_acc=0.8907
+  val_loss=0.3970    val_acc=0.8808
+  -> saved best model (val_acc=0.8808)
+
+Epoch 5/10
+  train_loss=0.3285  train_acc=0.8972
+  val_loss=0.3881    val_acc=0.8816
+  -> saved best model (val_acc=0.8816)
+
+Epoch 6/10
+  train_loss=0.3065  train_acc=0.9045
+  val_loss=0.3785    val_acc=0.8834
+  -> saved best model (val_acc=0.8834)
+
+Epoch 7/10
+  train_loss=0.2935  train_acc=0.9090
+  val_loss=0.3668    val_acc=0.8848
+  -> saved best model (val_acc=0.8848)
+
+Epoch 8/10
+  train_loss=0.2851  train_acc=0.9116
+  val_loss=0.3651    val_acc=0.8864
+  -> saved best model (val_acc=0.8864)
+
+Epoch 9/10
+  train_loss=0.2787  train_acc=0.9132
+  val_loss=0.3634    val_acc=0.8858
+
+Epoch 10/10
+  train_loss=0.2740  train_acc=0.9137
+  val_loss=0.3625    val_acc=0.8858

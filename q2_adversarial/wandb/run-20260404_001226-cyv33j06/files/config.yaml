@@ -1,0 +1,114 @@
+_wandb:
+    value:
+        cli_version: 0.25.1
+        e:
+            lefy2ga0cv6bm1phog0wbu7o1ihfrgyg:
+                args:
+                    - --epochs
+                    - "30"
+                    - --device
+                    - cuda
+                codePath: train_resnet18.py
+                codePathLocal: train_resnet18.py
+                cpu_count: 32
+                cpu_count_logical: 32
+                cudaVersion: "12.2"
+                disk:
+                    /:
+                        total: "75125227520"
+                        used: "12879486976"
+                email: spharaniya18@gmail.com
+                executable: /opt/ohpc/apps/python/3.10.pytorch/bin/python3
+                gpu: NVIDIA A30
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 3584
+                      memoryTotal: "25769803776"
+                      name: NVIDIA A30
+                      uuid: GPU-d62c6918-1a32-18a8-9987-c52fd93e7a7b
+                host: cn04
+                memory:
+                    total: "269827448832"
+                os: Linux-4.18.0-372.9.1.el8.x86_64-x86_64-with-glibc2.28
+                program: /csehome/m25csa013/Assignment 5/q2_adversarial/train_resnet18.py
+                python: CPython 3.10.12
+                root: /csehome/m25csa013/Assignment 5/q2_adversarial
+                slurm:
+                    cluster_name: csedpu
+                    conf: /etc/slurm/slurm.conf
+                    cpus_on_node: "1"
+                    gpus_on_node: "1"
+                    gtids: "0"
+                    job_account: root
+                    job_cpus_per_node: "1"
+                    job_end_time: "1775284901"
+                    job_gid: "2004"
+                    job_gpus: "1"
+                    job_group: mtech
+                    job_id: "32031"
+                    job_name: assignment5
+                    job_nodelist: cn04
+                    job_num_nodes: "1"
+                    job_partition: mtech
+                    job_qos: normal
+                    job_start_time: "1775241701"
+                    job_uid: "2425"
+                    job_user: m25csa013
+                    jobid: "32031"
+                    launch_node_ipaddr: 192.168.11.10
+                    localid: "0"
+                    mem_per_cpu: "8192"
+                    nnodes: "1"
+                    nodeid: "0"
+                    nodelist: cn04
+                    nprocs: "1"
+                    ntasks: "1"
+                    prio_process: "0"
+                    procid: "0"
+                    pty_port: "37595"
+                    pty_win_col: "113"
+                    pty_win_row: "9"
+                    srun_comm_host: 192.168.11.10
+                    srun_comm_port: "45535"
+                    step_gpus: "1"
+                    step_id: "0"
+                    step_launcher_port: "45535"
+                    step_nodelist: cn03
+                    step_num_nodes: "1"
+                    step_num_tasks: "1"
+                    step_tasks_per_node: "1"
+                    stepid: "0"
+                    submit_dir: /csehome/m25csa013/Assignment 5
+                    submit_host: cn03
+                    task_pid: "2238594"
+                    tasks_per_node: "1"
+                    topology_addr: cn04
+                    topology_addr_pattern: node
+                startedAt: "2026-04-03T18:42:26.644278Z"
+                writerId: lefy2ga0cv6bm1phog0wbu7o1ihfrgyg
+        m: []
+        python_version: 3.10.12
+        t:
+            "1":
+                - 1
+                - 41
+            "2":
+                - 1
+                - 41
+            "3":
+                - 2
+                - 13
+                - 16
+            "4": 3.10.12
+            "5": 0.25.1
+            "8":
+                - 2
+            "12": 0.25.1
+            "13": linux-x86_64
+batch_size:
+    value: 128
+epochs:
+    value: 30
+lr:
+    value: 0.1

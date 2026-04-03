@@ -1,0 +1,31 @@
+                                                                   
+  [bim] Epoch 01/20  train_acc=0.5371  val_acc=0.6203
+    -> saved (val_acc=0.6203)
+  [bim] Epoch 02/20  train_acc=0.8521  val_acc=0.9703
+    -> saved (val_acc=0.9703)
+  [bim] Epoch 03/20  train_acc=0.9829  val_acc=0.9750
+    -> saved (val_acc=0.9750)
+  [bim] Epoch 04/20  train_acc=0.9903  val_acc=0.9783
+    -> saved (val_acc=0.9783)
+  [bim] Epoch 05/20  train_acc=0.9959  val_acc=0.9694
+  [bim] Epoch 06/20  train_acc=0.9979  val_acc=0.9803
+    -> saved (val_acc=0.9803)
+  [bim] Epoch 07/20  train_acc=0.9985  val_acc=0.9794
+  [bim] Epoch 08/20  train_acc=0.9982  val_acc=0.9814
+    -> saved (val_acc=0.9814)
+  [bim] Epoch 09/20  train_acc=0.9976  val_acc=0.9747
+  [bim] Epoch 10/20  train_acc=0.9983  val_acc=0.9828
+    -> saved (val_acc=0.9828)
+  [bim] Epoch 11/20  train_acc=0.9995  val_acc=0.9833
+    -> saved (val_acc=0.9833)
+  [bim] Epoch 12/20  train_acc=0.9998  val_acc=0.9839
+    -> saved (val_acc=0.9839)
+  [bim] Epoch 13/20  train_acc=0.9998  val_acc=0.9850
+    -> saved (val_acc=0.9850)
+  [bim] Epoch 14/20  train_acc=0.9998  val_acc=0.9839
+  [bim] Epoch 15/20  train_acc=1.0000  val_acc=0.9844
+  [bim] Epoch 16/20  train_acc=1.0000  val_acc=0.9842
+  [bim] Epoch 17/20  train_acc=0.9999  val_acc=0.9839
+  [bim] Epoch 18/20  train_acc=1.0000  val_acc=0.9842
+  [bim] Epoch 19/20  train_acc=1.0000  val_acc=0.9847
+  [bim] Epoch 20/20  train_acc=0.9999  val_acc=0.9814

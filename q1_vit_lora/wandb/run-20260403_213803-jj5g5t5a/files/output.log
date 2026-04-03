@@ -1,0 +1,17 @@
+  Epoch 1/10  val_acc=0.8804
+  -> saved to /csehome/m25csa013/Assignment 5/weights/q1_best/optuna_best_model.pt
+  Epoch 2/10  val_acc=0.8872
+  -> saved to /csehome/m25csa013/Assignment 5/weights/q1_best/optuna_best_model.pt
+  Epoch 3/10  val_acc=0.8934
+  -> saved to /csehome/m25csa013/Assignment 5/weights/q1_best/optuna_best_model.pt
+  Epoch 4/10  val_acc=0.8980
+  -> saved to /csehome/m25csa013/Assignment 5/weights/q1_best/optuna_best_model.pt
+  Epoch 5/10  val_acc=0.8976
+  Epoch 6/10  val_acc=0.9010
+  -> saved to /csehome/m25csa013/Assignment 5/weights/q1_best/optuna_best_model.pt
+  Epoch 7/10  val_acc=0.8994
+  Epoch 8/10  val_acc=0.9016
+  -> saved to /csehome/m25csa013/Assignment 5/weights/q1_best/optuna_best_model.pt
+  Epoch 9/10  val_acc=0.9020
+  -> saved to /csehome/m25csa013/Assignment 5/weights/q1_best/optuna_best_model.pt
+  Epoch 10/10  val_acc=0.9020

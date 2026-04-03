@@ -1,0 +1,138 @@
+_wandb:
+    value:
+        cli_version: 0.25.1
+        e:
+            b7tv90osmczimdhn3rl0hyo0mwhin36z:
+                args:
+                    - --trials
+                    - "20"
+                    - --retrain
+                    - --device
+                    - cuda
+                codePath: optuna_search.py
+                codePathLocal: optuna_search.py
+                cpu_count: 32
+                cpu_count_logical: 32
+                cudaVersion: "12.2"
+                disk:
+                    /:
+                        total: "75125227520"
+                        used: "42537664512"
+                email: spharaniya18@gmail.com
+                executable: /opt/ohpc/apps/python/3.10.pytorch/bin/python3
+                gpu: NVIDIA A30
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 3584
+                      memoryTotal: "25769803776"
+                      name: NVIDIA A30
+                      uuid: GPU-d5543778-7614-9d15-9375-5b54ecb29185
+                host: cn03
+                memory:
+                    total: "269827452928"
+                os: Linux-4.18.0-372.9.1.el8.x86_64-x86_64-with-glibc2.28
+                program: /csehome/m25csa013/Assignment 5/q1_vit_lora/optuna_search.py
+                python: CPython 3.10.12
+                root: /csehome/m25csa013/Assignment 5/q1_vit_lora
+                slurm:
+                    cluster_name: csedpu
+                    conf: /etc/slurm/slurm.conf
+                    cpus_on_node: "1"
+                    gpus_on_node: "1"
+                    gtids: "0"
+                    job_account: root
+                    job_cpus_per_node: "1"
+                    job_end_time: "1775245080"
+                    job_gid: "2004"
+                    job_gpus: "1"
+                    job_group: mtech
+                    job_id: "31948"
+                    job_name: assignment5
+                    job_nodelist: cn03
+                    job_num_nodes: "1"
+                    job_partition: mtech
+                    job_qos: normal
+                    job_start_time: "1775201880"
+                    job_uid: "2425"
+                    job_user: m25csa013
+                    jobid: "31948"
+                    launch_node_ipaddr: 192.168.11.10
+                    localid: "0"
+                    mem_per_cpu: "8192"
+                    nnodes: "1"
+                    nodeid: "0"
+                    nodelist: cn03
+                    nprocs: "1"
+                    ntasks: "1"
+                    prio_process: "0"
+                    procid: "0"
+                    pty_port: "42181"
+                    pty_win_col: "119"
+                    pty_win_row: "9"
+                    srun_comm_host: 192.168.11.10
+                    srun_comm_port: "37165"
+                    step_gpus: "1"
+                    step_id: "0"
+                    step_launcher_port: "37165"
+                    step_nodelist: cn02
+                    step_num_nodes: "1"
+                    step_num_tasks: "1"
+                    step_tasks_per_node: "1"
+                    stepid: "0"
+                    submit_dir: /csehome/m25csa013/Assignment 5
+                    submit_host: cn02
+                    task_pid: "562535"
+                    tasks_per_node: "1"
+                    topology_addr: cn03
+                    topology_addr_pattern: node
+                startedAt: "2026-04-03T12:41:51.522220Z"
+                writerId: b7tv90osmczimdhn3rl0hyo0mwhin36z
+        m: []
+        python_version: 3.10.12
+        t:
+            "1":
+                - 1
+                - 5
+                - 11
+                - 35
+                - 41
+                - 49
+                - 53
+                - 63
+                - 71
+                - 98
+            "2":
+                - 1
+                - 5
+                - 11
+                - 35
+                - 41
+                - 49
+                - 53
+                - 63
+                - 71
+                - 98
+            "3":
+                - 2
+                - 13
+                - 16
+            "4": 3.10.12
+            "5": 0.25.1
+            "6": 4.56.2
+            "8":
+                - 2
+            "10":
+                - 20
+            "12": 0.25.1
+            "13": linux-x86_64
+alpha:
+    value: 32
+dropout:
+    value: 0.2
+lr:
+    value: 0.0003637180871784595
+optuna_trial:
+    value: 3
+rank:
+    value: 8

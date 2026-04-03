@@ -1,0 +1,53 @@
+100%|██████████| 169M/169M [02:19<00:00, 1.22MB/s] 
+/csehome/m25csa013/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py:627: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(
+Trainable: 38,500 / 21,704,164 (0.18%)
+
+Epoch 1/10
+                                                          
+  train_loss=2.5700  train_acc=0.4756
+  val_loss=1.4392    val_acc=0.6852
+  -> saved best model (val_acc=0.6852)
+
+Epoch 2/10
+  train_loss=1.1569  train_acc=0.7286
+  val_loss=1.0522    val_acc=0.7346
+  -> saved best model (val_acc=0.7346)
+
+Epoch 3/10
+  train_loss=0.9358  train_acc=0.7568
+  val_loss=0.9341    val_acc=0.7536
+  -> saved best model (val_acc=0.7536)
+
+Epoch 4/10
+  train_loss=0.8423  train_acc=0.7722
+  val_loss=0.8818    val_acc=0.7596
+  -> saved best model (val_acc=0.7596)
+
+Epoch 5/10
+  train_loss=0.7916  train_acc=0.7816
+  val_loss=0.8497    val_acc=0.7660
+  -> saved best model (val_acc=0.7660)
+
+Epoch 6/10
+  train_loss=0.7624  train_acc=0.7875
+  val_loss=0.8304    val_acc=0.7728
+  -> saved best model (val_acc=0.7728)
+
+Epoch 7/10
+  train_loss=0.7369  train_acc=0.7942
+  val_loss=0.8198    val_acc=0.7722
+
+Epoch 8/10
+  train_loss=0.7274  train_acc=0.7960
+  val_loss=0.8156    val_acc=0.7718
+
+Epoch 9/10
+  train_loss=0.7152  train_acc=0.7999
+  val_loss=0.8128    val_acc=0.7740
+  -> saved best model (val_acc=0.7740)
+
+Epoch 10/10
+  train_loss=0.7072  train_acc=0.8023
+  val_loss=0.8120    val_acc=0.7746
+  -> saved best model (val_acc=0.7746)

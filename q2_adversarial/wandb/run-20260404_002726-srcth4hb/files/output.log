@@ -1,0 +1,35 @@
+  [pgd] epoch 1:   0%|          | 0/160 [00:00<?, ?it/s]/csehome/m25csa013/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py:627: UserWarning: This DataLoader will create 2 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(
+                                                                   
+  [pgd] Epoch 01/20  train_acc=0.5248  val_acc=0.5519
+    -> saved (val_acc=0.5519)
+  [pgd] Epoch 02/20  train_acc=0.7538  val_acc=0.8219
+    -> saved (val_acc=0.8219)
+  [pgd] Epoch 03/20  train_acc=0.9549  val_acc=0.9011
+    -> saved (val_acc=0.9011)
+  [pgd] Epoch 04/20  train_acc=0.9857  val_acc=0.9592
+    -> saved (val_acc=0.9592)
+  [pgd] Epoch 05/20  train_acc=0.9927  val_acc=0.9689
+    -> saved (val_acc=0.9689)
+  [pgd] Epoch 06/20  train_acc=0.9948  val_acc=0.9803
+    -> saved (val_acc=0.9803)
+  [pgd] Epoch 07/20  train_acc=0.9970  val_acc=0.9672
+  [pgd] Epoch 08/20  train_acc=0.9975  val_acc=0.9644
+  [pgd] Epoch 09/20  train_acc=0.9993  val_acc=0.9789
+  [pgd] Epoch 10/20  train_acc=0.9995  val_acc=0.9825
+    -> saved (val_acc=0.9825)
+  [pgd] Epoch 11/20  train_acc=0.9995  val_acc=0.9803
+  [pgd] Epoch 12/20  train_acc=0.9995  val_acc=0.9831
+    -> saved (val_acc=0.9831)
+  [pgd] Epoch 13/20  train_acc=0.9990  val_acc=0.9828
+  [pgd] Epoch 14/20  train_acc=0.9998  val_acc=0.9833
+    -> saved (val_acc=0.9833)
+  [pgd] Epoch 15/20  train_acc=1.0000  val_acc=0.9842
+    -> saved (val_acc=0.9842)
+  [pgd] Epoch 16/20  train_acc=1.0000  val_acc=0.9850
+    -> saved (val_acc=0.9850)
+  [pgd] Epoch 17/20  train_acc=0.9999  val_acc=0.9864
+    -> saved (val_acc=0.9864)
+  [pgd] Epoch 18/20  train_acc=0.9999  val_acc=0.9847
+  [pgd] Epoch 19/20  train_acc=1.0000  val_acc=0.9861
+  [pgd] Epoch 20/20  train_acc=1.0000  val_acc=0.9858

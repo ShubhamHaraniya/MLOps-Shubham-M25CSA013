@@ -1,0 +1,1 @@
+{"_step":0,"test_accuracy":0.8902,"trainable_params":185956,"classwise_histogram":{"_type":"image-file","sha256":"625032bf7f7692697e7865218d2a278ee03392de1e065518cb179536a155e131","size":60692,"path":"media/images/classwise_histogram_0_625032bf7f7692697e78.png","format":"png","width":2400,"height":750},"_timestamp":1.775217760243144e+09,"_wandb":{"runtime":0},"_runtime":0}

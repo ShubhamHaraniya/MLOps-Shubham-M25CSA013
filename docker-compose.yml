@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  mlops:
+    build: .
+    container_name: mlops_ass5
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - WANDB_API_KEY=${WANDB_API_KEY}
+      - HF_TOKEN=${HF_TOKEN}
+    volumes:
+      - .:/app
+      - ./data:/app/data
+      - ./weights:/app/weights
+      - ./results:/app/results
+    shm_size: "8g"
+    stdin_open: true
+    tty: true
+    command: bash

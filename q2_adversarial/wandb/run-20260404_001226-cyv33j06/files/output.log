@@ -1,0 +1,54 @@
+100%|██████████| 170M/170M [00:14<00:00, 11.4MB/s] 
+/csehome/m25csa013/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py:627: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(
+                                                          
+Epoch 01/30  train_loss=1.9140  train_acc=0.3197  test_loss=1.6168   test_acc=0.4029
+  -> saved best  (test_acc=0.4029)
+Epoch 02/30  train_loss=1.4085  train_acc=0.4869  test_loss=1.2659   test_acc=0.5437
+  -> saved best  (test_acc=0.5437)
+Epoch 03/30  train_loss=1.1074  train_acc=0.6033  test_loss=1.1636   test_acc=0.5889
+  -> saved best  (test_acc=0.5889)
+Epoch 04/30  train_loss=0.8821  train_acc=0.6875  test_loss=0.8471   test_acc=0.7072
+  -> saved best  (test_acc=0.7072)
+Epoch 05/30  train_loss=0.7154  train_acc=0.7504  test_loss=0.9422   test_acc=0.6996
+Epoch 06/30  train_loss=0.6193  train_acc=0.7860  test_loss=0.7920   test_acc=0.7389
+  -> saved best  (test_acc=0.7389)
+Epoch 07/30  train_loss=0.5605  train_acc=0.8050  test_loss=0.8486   test_acc=0.7381
+Epoch 08/30  train_loss=0.5284  train_acc=0.8175  test_loss=0.8401   test_acc=0.7238
+Epoch 09/30  train_loss=0.5040  train_acc=0.8248  test_loss=0.6164   test_acc=0.7905
+  -> saved best  (test_acc=0.7905)
+Epoch 10/30  train_loss=0.4840  train_acc=0.8341  test_loss=0.6723   test_acc=0.7819
+Epoch 11/30  train_loss=0.4586  train_acc=0.8437  test_loss=0.5882   test_acc=0.8005
+  -> saved best  (test_acc=0.8005)
+Epoch 12/30  train_loss=0.4496  train_acc=0.8463  test_loss=0.5825   test_acc=0.8029
+  -> saved best  (test_acc=0.8029)
+Epoch 13/30  train_loss=0.4336  train_acc=0.8506  test_loss=0.6080   test_acc=0.7966
+Epoch 14/30  train_loss=0.4237  train_acc=0.8549  test_loss=0.6496   test_acc=0.7854
+Epoch 15/30  train_loss=0.4173  train_acc=0.8552  test_loss=0.6340   test_acc=0.7955
+Epoch 16/30  train_loss=0.2531  train_acc=0.9156  test_loss=0.2793   test_acc=0.9049
+  -> saved best  (test_acc=0.9049)
+Epoch 17/30  train_loss=0.1996  train_acc=0.9324  test_loss=0.2681   test_acc=0.9085
+  -> saved best  (test_acc=0.9085)
+Epoch 18/30  train_loss=0.1786  train_acc=0.9397  test_loss=0.2711   test_acc=0.9087
+  -> saved best  (test_acc=0.9087)
+Epoch 19/30  train_loss=0.1618  train_acc=0.9440  test_loss=0.2671   test_acc=0.9140
+  -> saved best  (test_acc=0.9140)
+Epoch 20/30  train_loss=0.1506  train_acc=0.9479  test_loss=0.2820   test_acc=0.9074
+Epoch 21/30  train_loss=0.1342  train_acc=0.9550  test_loss=0.2543   test_acc=0.9145
+  -> saved best  (test_acc=0.9145)
+Epoch 22/30  train_loss=0.1221  train_acc=0.9583  test_loss=0.2600   test_acc=0.9170
+  -> saved best  (test_acc=0.9170)
+Epoch 23/30  train_loss=0.1163  train_acc=0.9608  test_loss=0.2540   test_acc=0.9192
+  -> saved best  (test_acc=0.9192)
+Epoch 24/30  train_loss=0.1067  train_acc=0.9642  test_loss=0.2552   test_acc=0.9186
+Epoch 25/30  train_loss=0.0993  train_acc=0.9659  test_loss=0.2643   test_acc=0.9170
+Epoch 26/30  train_loss=0.0762  train_acc=0.9757  test_loss=0.2366   test_acc=0.9252
+  -> saved best  (test_acc=0.9252)
+Epoch 27/30  train_loss=0.0640  train_acc=0.9799  test_loss=0.2281   test_acc=0.9277
+  -> saved best  (test_acc=0.9277)
+Epoch 28/30  train_loss=0.0591  train_acc=0.9813  test_loss=0.2306   test_acc=0.9298
+  -> saved best  (test_acc=0.9298)
+Epoch 29/30  train_loss=0.0567  train_acc=0.9824  test_loss=0.2306   test_acc=0.9301
+  -> saved best  (test_acc=0.9301)
+Epoch 30/30  train_loss=0.0540  train_acc=0.9835  test_loss=0.2324   test_acc=0.9312
+  -> saved best  (test_acc=0.9312)
