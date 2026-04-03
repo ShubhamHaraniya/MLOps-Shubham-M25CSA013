@@ -320,6 +320,48 @@
                     <a href="https://github.com/ShubhamHaraniya/MLOps-Shubham-M25CSA013/tree/Assignment-4"
                         target="_blank" class="btn">View Github</a>
                 </article>
+                <!-- Assignment 5 Card -->
+                <article class="card" style="animation-delay: 0.4s;">
+                    <span class="tag">Assignment 5</span>
+                    <h2>ViT-LoRA &amp; Adversarial Robustness</h2>
+                    <div class="analysis-text">
+                        <p>
+                            Fine-tuned Vision Transformers on CIFAR-100 using PEFT/LoRA and evaluated adversarial robustness using IBM ART.
+                        </p>
+
+                        <!-- Key metric badges -->
+                        <div class="metrics-row">
+                            <div class="metric-badge green">
+                                <span class="val">90.20%</span>
+                                <span class="lbl">LoRA Accuracy</span>
+                            </div>
+                            <div class="metric-badge">
+                                <span class="val">76.57%</span>
+                                <span class="lbl">Baseline Acc</span>
+                            </div>
+                            <div class="metric-badge green">
+                                <span class="val">1.51%</span>
+                                <span class="lbl">Trainable Params</span>
+                            </div>
+                            <div class="metric-badge green">
+                                <span class="val">&gt;99.7%</span>
+                                <span class="lbl">Adv Detection Acc</span>
+                            </div>
+                        </div>
+
+                        <ul style="padding-left: 1.2rem; list-style-type: disc;">
+                            <li><strong>ViT-LoRA:</strong> Fine-tuned <code style="color: var(--accent-color);">vit_small_patch16_224</code> using best Optuna grid search config (rank=16, &alpha;=16) to beat the baseline (90.20% vs 76.57%) training only ~333K params.</li>
+                            <li><strong>FGSM Attacks:</strong> Evaluated FGSM (Scratch &amp; IBM ART) on a ResNet-18 model, successfully degrading clean accuracy from 93.12% to 18.70% at &epsi;=0.3.</li>
+                            <li><strong>Defenses:</strong> Trained ResNet-34 detectors against sophisticated PGD and BIM iterative attacks, achieving near-perfect &gt;99.7% detection accuracy and 1.0 ROC-AUC.</li>
+                            <li><strong>Tracking:</strong> Complete metric charts, gradient norms, class-wise accuracy histograms, and qualitative visual adversarial grids tracked end-to-end via WandB.</li>
+                        </ul>
+                    </div>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <a href="https://github.com/ShubhamHaraniya/MLOps-Shubham-M25CSA013/tree/Assignment-5" target="_blank" class="btn" style="flex: 1; min-width: 120px; font-size: 0.9rem;">View Github</a>
+                        <a href="https://huggingface.co/spidey1807/vit-small-cifar100-lora" target="_blank" class="btn" style="flex: 1; min-width: 120px; font-size: 0.9rem; background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);">🤗 HuggingFace</a>
+                        <a href="https://wandb.ai/spharaniya18-intelkit-solutions/mlops-assignment5" target="_blank" class="btn" style="flex: 1; min-width: 120px; font-size: 0.9rem; background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%); color: #fff;">Weights &amp; Biases</a>
+                    </div>
+                </article>
 
             </div>
         </section>
