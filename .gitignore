@@ -1,0 +1,7 @@
+logs/
+data/
+.env
+__pycache__/
+*.pyc
+weights/q1_best/exp*
+weights/q2_all/*.npy
