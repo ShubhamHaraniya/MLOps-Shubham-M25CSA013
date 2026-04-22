@@ -1,0 +1,6 @@
+transformers
+torch
+sacrebleu
+sentencepiece
+gdown
+striprtf
